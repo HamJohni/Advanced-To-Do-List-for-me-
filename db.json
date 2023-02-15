@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "login": "Zhanyasdabek",
+      "email": "joniasd.pacan@list.ru",
+      "password": "0011asdaJoni",
+      "categories": [
+        {
+          "id": 1,
+          "categoryName": "Front-end",
+          "tasks": [
+            {
+              "id": 1,
+              "taskTitle": "Изучить redux",
+              "isComplete": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "email": "joni.pacan@list.ru",
+      "password": "$2a$10$MrlmkYE/BdpmhNwv3TkFc.QjALgxPEngX4p11U3z8uubBaNxw5GGy",
+      "login": "joni",
+      "categories": [],
+      "id": 2
+    }
+  ]
+}

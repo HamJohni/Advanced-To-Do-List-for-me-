@@ -1,0 +1,167 @@
+.aside{
+  width: 370px;
+  height: 100vh;
+  background: #E5E5E5;
+  padding: 48px 20px 0 20px;
+
+  &__subtitle{
+    font-size: 20px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    padding: 7px 10px 7px 20px;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 28px;
+
+    &:hover{
+      transform: scale(1.05);
+      background: grey;
+      color: beige;
+    }
+
+    &:active{
+      transform: scale(.9);
+    }
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    row-gap:15px;
+    margin-bottom: 50px;
+  }
+
+  &__item{
+    padding: 10px 10px 10px 20px;
+    background: white;
+    border-radius: 10px;
+    font-size: 17px;
+    line-height: 17px;
+    letter-spacing: 0.15px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    cursor: pointer;
+    position: relative;
+
+    &-del{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 15px;
+    }
+
+    &:hover{
+      transform: scale(1.05);
+      background: grey;
+      color: beige;
+    }
+
+    &:active{
+      transform: scale(.9);
+    }
+
+    &-color{
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+    }
+  }
+
+  &__plus{
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.15px;
+    color: #767676;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px 10px 10px 20px;
+    cursor: pointer;
+
+    &:hover{
+      transform: scale(1.05);
+      background: grey;
+      color: white;
+    }
+
+    &:active{
+      transform: scale(.9);
+    }
+  }
+
+  &__add{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 18px;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
+    transform: scale(.5);
+    opacity: 0;
+    pointer-events: none;
+
+    &.active{
+      transform: scale(1);
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    &-input{
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #767676;
+      padding: 10px;
+    }
+
+    &-storage{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 13px;
+    }
+
+    &-color{
+      width: 23px;
+      height: 23px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    &-btn{
+      padding: 9px;
+      background: #4DD599;
+      border-radius: 10px;
+      width: 100%;
+    }
+    &-close{
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: -10px;
+      right: -10px;
+      background: #5C5C5C;
+      border-radius: 50%;
+      padding: 2px;
+      color: white;
+      cursor: pointer;
+
+      &:hover{
+        transform: scale(1.05);
+        background: grey;
+        color: beige;
+      }
+
+      &:active{
+        transform: scale(.9);
+      }
+    }
+  }
+}

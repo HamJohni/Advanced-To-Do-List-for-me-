@@ -1,0 +1,39 @@
+.home{
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__exit{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    row-gap: 5px;
+    background: #E5E5E5;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: default;
+
+    &-btn{
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      padding: 9px;
+      background: #4DD599;
+      border-radius: 10px;
+    }
+
+    &:hover{
+      &:hover{
+        color: beige;
+        transform: scale(1.05);
+        background: grey;
+      }
+
+    }
+  }
+}
